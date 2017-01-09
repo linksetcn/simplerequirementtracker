@@ -20,7 +20,7 @@ srtApp.controller('srtController', [ '$scope', '$location', '$http', 'FileUpload
 			$scope.getUser = function() {
 				$http({
 					method : "POST",
-					url : "http://localhost:8080/fetchModules",
+					url : "fetchModules",//http://localhost:8080/
 					data : $scope.userId
 				}).success(function(data, status) {
 					$scope.wrappers=data;

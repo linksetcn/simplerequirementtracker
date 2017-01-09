@@ -3,7 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>srt-enjoy</groupId>
 	<artifactId>srt-enjoy</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<!-- <version>0.0.1-SNAPSHOT</version> -->
+	<version>2.0.1</version>
 	<packaging>war</packaging>
 	<name>Simple Requirement Tracker</name>
 	<description>A simple requirement tracking tool.</description>
@@ -49,6 +50,7 @@
 				<plugin>
 					<artifactId>maven-war-plugin</artifactId>
 					<configuration>
+						<!-- <warName>enjoy</warName> -->
 						<failOnMissingWebXml>false</failOnMissingWebXml>
 					</configuration>
 				</plugin>
