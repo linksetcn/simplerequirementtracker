@@ -32,19 +32,19 @@
 	<div ng-hide='addModule' ng-if="selectedWrapper" class="content">
 		<h2>
 			项目名称：{{selectedWrapper.name}}<button onclick="javascript:void(0)" ng-click="editWrapper('ew_name')">编辑</button>
-			<div ng-show="ewAttrs['ew_name']">
+			<span ng-show="ewAttrs['ew_name']">
 				<textarea rows="1" cols="50" ng-model="selectedWrapper.name"></textarea>
 				<button onclick="javascript:void(0)" ng-click="saveWrapper(selectedWrapper)">保存</button>
 				<button onclick="javascript:void(0)" ng-click="editWrapper('ew_name')">取消</button>
-			</div>
+			</span>
 		</h2>
 		<h3>当前状态:
 			{{selectedWrapper.status}}<button onclick="javascript:void(0)" ng-click="editWrapper('ew_status')">编辑</button>
-			<div ng-show="ewAttrs['ew_status']">
+			<span ng-show="ewAttrs['ew_status']">
 				<textarea rows="1" cols="50" ng-model="selectedWrapper.status"></textarea>
 				<button onclick="javascript:void(0)" ng-click="saveWrapper(selectedWrapper)">保存</button>
 				<button onclick="javascript:void(0)" ng-click="editWrapper('ew_status')">取消</button>
-			</div>
+			</span>
 		</h3>
 		<h3>项目描述：</h3>
 		<pre>{{selectedWrapper.description}}</pre>
